@@ -4,7 +4,7 @@
 
 Para compilar o projeto:
 
-    ./mvn package
+    ./mvnw package
 
 Para executar:
 

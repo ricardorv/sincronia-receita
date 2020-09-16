@@ -74,7 +74,7 @@ public class BatchConfig extends DefaultBatchConfigurer {
 
         FlatFileItemWriter<Conta> writer = new FlatFileItemWriter<>();
         writer.setResource(resource);
-        writer.setAppendAllowed(true);
+        writer.setShouldDeleteIfExists(true);
         writer.setHeaderCallback(new FlatFileHeaderCallback() {
             @Override
             public void writeHeader(Writer writer) throws IOException {
